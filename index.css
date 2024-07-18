@@ -1,0 +1,107 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+   
+    height: 100vh;
+    margin: 0.5rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 2rem;
+
+}
+
+.logo{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.image-left-container{
+    /* overflow: hidden; */
+}
+.image-hero-left{
+    /* position: absolute; */
+   /* clip: rect(0,0,3px,0); */
+}
+
+.main-header-text{
+    font-size: 64px;
+    text-align: center;
+}
+
+.header-paragraph{
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-align: center;
+    color: #87879D;
+}
+
+.header-section{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    gap:2rem;
+}
+
+.header-text{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(3,auto);
+    place-content: center;
+    gap:2rem;
+    padding: 2rem;
+}
+
+.header-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.header-download{
+    background-color: #4D96A9;
+    color: white;
+    font-weight: 600;
+    padding:1.15rem;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.header-download:hover{
+    background-color: #71C0D4;
+    cursor: pointer;
+}
+
+.header-download >  span{
+    color: #8FE3F9;
+}
+
+.header-what{
+    background-color: #855FB1;
+    color: white;
+    font-weight: 600;
+    padding: 1.15rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.header-what:hover{
+    background-color: #B18BDD;
+    cursor: pointer;
+}
