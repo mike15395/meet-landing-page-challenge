@@ -42,6 +42,9 @@ main{
    /* clip: rect(0,0,3px,0); */
 }
 
+.image-hero-tablet{
+    display: none;
+}
 .main-header-text{
     font-size: 64px;
     text-align: center;
@@ -141,6 +144,7 @@ section{
     grid-template-columns: repeat(4,auto);
     grid-template-rows: 1fr;
     place-content: space-evenly;
+   
 }
 
 .second-sub-heading{
@@ -181,7 +185,7 @@ section{
 footer {
     background: url('./starter-code/assets/desktop/image-footer.jpg')no-repeat center center , #4D96A9;
     background-size: cover;
-    /* background-blend-mode: soft-light; */
+    background-blend-mode: soft-light;
     color: white; 
     
   }
@@ -191,8 +195,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
-    background-color: #4D96A9;
-    opacity: 70%;
+    /* background-color: #4D96A9; */
+    /* opacity: 70%; */
     height: 250px;
     place-self: center;
     padding-left: 8rem;
@@ -229,7 +233,7 @@ footer {
     
 }
 
-.footer-button :hover{
+.footer-button:hover{
     background-color: #B18BDD;
 }
 
@@ -250,28 +254,79 @@ footer {
 
 
 /* Media queries for tablet*/
-/* 
+
 @media all and (max-width:820px) {
     .header-section{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: auto auto-fill;
         grid-template-areas: 
-        "hero-image-left hero-image-right"
-        "header-text header-text";
+        "hero-image"
+        "header-text";
+           
     }
-    .image-hero-left{
-        width: fit-content;
-        height: fit-content;
-        grid-area: hero-image-left;
+    .image-hero-left-desktop,.image-hero-right-desktop{
+      display: none;
     }
-    .image-hero-right{
-        width: fit-content;
-        height: fit-content;
-        grid-area:hero-image-right;
+    
+    .image-hero-tablet{
+        display: block;
+        grid-area: hero-image;
+        place-self: center; 
     }
     .header-text{
         grid-area: header-text;
+        width: min-content;
+        place-self: center; 
+          
     }
+    .main-header-text{
+        font-size: 52px;
+    }
+   .second-image{
+    width: 164px;
+    height: 156px;
+   }
+   footer {
+    background: url('./starter-code/assets/tablet/image-footer.jpg') center, #4D96A9;
+    height: 428px;
+   background-blend-mode: soft-light;
+    background-size: cover;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "heading"
+    "paragraph"
+    "button";
+  
+   gap: 2px;
+   
     
-} */
+}
+
+.footer-heading{
+    grid-area: heading;
+    place-self: center;
+    
+}
+
+.footer-paragraph{
+    grid-area: paragraph;
+    place-self: center;
+    text-align: center;
+}
+
+.footer-button{
+    grid-area: button;
+    place-self: center;
+}
+
+}
