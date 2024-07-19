@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -12,20 +14,23 @@ body{
    
     height: 100vh;
     margin: 0.5rem;
+    font-family: "Red Hat Display",sans-serif;
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
     gap: 2rem;
 
 }
 
+/* Header section css*/
 .logo{
    display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4rem;
    
 }
 
@@ -40,6 +45,9 @@ main{
 .main-header-text{
     font-size: 64px;
     text-align: center;
+    font-weight: bolder;
+    color: #28283D;
+    line-height: 70px;
 }
 
 .header-paragraph{
@@ -47,11 +55,12 @@ main{
     /* font-weight: bold; */
     text-align: center;
     color: #87879D;
+    font-weight: 400;
 }
 
 .header-section{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
     gap:2rem;
 }
@@ -61,8 +70,8 @@ main{
     grid-template-columns: repeat(1,auto);
     grid-template-rows: repeat(3,auto);
     place-content: center;
-    gap:2rem;
-    padding: 2rem;
+    gap:1.75rem;
+    
 }
 
 .header-buttons{
@@ -77,8 +86,10 @@ main{
     background-color: #4D96A9;
     color: white;
     font-weight: 600;
-    padding:1.15rem;
+    padding:1rem;
     border-radius: 50px;
+    width: 193px;
+    height: 58px;
     border: none;
 
 }
@@ -96,12 +107,171 @@ main{
     background-color: #855FB1;
     color: white;
     font-weight: 600;
-    padding: 1.15rem;
+    padding: 1rem;
     border-radius: 50px;
     border: none;
+    width:139px;
+    height: 58px;
 }
 
 .header-what:hover{
     background-color: #B18BDD;
     cursor: pointer;
 }
+
+/*Middle section css */
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,auto);
+    gap:30px;
+
+}
+
+.second-image{
+    width:255px;
+    height: 242px;
+    border-radius: 10px;
+
+}
+
+.second-image-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 1fr;
+    place-content: space-evenly;
+}
+
+.second-sub-heading{
+    color: #4D96A9;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.second-main-heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #28283D;
+    width: 32%;
+    text-align: center;
+ 
+}
+
+.second-paragraph{
+    color: #87879D;
+    text-align: center;
+    font-weight: 400;
+    width: 35%;
+}
+
+.second-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap:10px;
+  
+}
+
+/*Footer CSS*/
+
+
+footer {
+    background: url('./starter-code/assets/desktop/image-footer.jpg')no-repeat center center , #4D96A9;
+    background-size: cover;
+    /* background-blend-mode: soft-light; */
+    color: white; 
+    
+  }
+
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    background-color: #4D96A9;
+    opacity: 70%;
+    height: 250px;
+    place-self: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    gap: 4rem;
+
+    
+}
+
+.footer-heading{
+    font-size: 40px;
+    place-self: center;
+    font-weight: bolder;
+   
+}
+
+.footer-paragraph{
+    font-size: 18px;
+    place-self: center;
+    
+}
+
+.footer-button{
+    background-color: #855FB1;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 50px;
+    place-self: center;
+    border: none;
+    width: 193px;
+    
+    
+}
+
+.footer-button :hover{
+    background-color: #B18BDD;
+}
+
+.footer-button > span{
+    color: #D9B8FF;
+}
+
+.image-one{
+    place-self: center;
+}
+
+.image-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+}
+
+
+/* Media queries for tablet*/
+/* 
+@media all and (max-width:820px) {
+    .header-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "hero-image-left hero-image-right"
+        "header-text header-text";
+    }
+    .image-hero-left{
+        width: fit-content;
+        height: fit-content;
+        grid-area: hero-image-left;
+    }
+    .image-hero-right{
+        width: fit-content;
+        height: fit-content;
+        grid-area:hero-image-right;
+    }
+    .header-text{
+        grid-area: header-text;
+    }
+    
+} */
