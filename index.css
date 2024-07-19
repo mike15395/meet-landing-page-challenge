@@ -330,3 +330,39 @@ footer {
 }
 
 }
+
+/* media query mobile*/
+
+@media all and (max-width:450px){
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-image-container{
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        gap: 30px;
+        place-self: center;
+    }
+   .second-image{
+    width: 151px;
+    height: 143px;
+   }
+
+   footer {
+    background: url('./starter-code/assets/mobile/image-footer.jpg')  no-repeat  center, #4D96A9;
+    height: 768px;
+    width: auto;
+   background-blend-mode: soft-light;
+    background-size: auto;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+}
