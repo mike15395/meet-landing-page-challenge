@@ -177,7 +177,7 @@ section{
 
 
 footer {
-    background: url('./starter-code/assets/desktop/image-footer.jpg')no-repeat center center , #4D96A9;
+    background: url('./assets/desktop/image-footer.jpg')no-repeat center center , #4D96A9;
     background-size: cover;
     background-blend-mode: soft-light;
     color: white; 
@@ -280,7 +280,7 @@ footer {
     height: 156px;
    }
    footer {
-    background: url('./starter-code/assets/tablet/image-footer.jpg') center, #4D96A9;
+    background: url('./assets/tablet/image-footer.jpg') center, #4D96A9;
     height: 428px;
    background-blend-mode: soft-light;
     background-size: cover;
@@ -348,7 +348,7 @@ footer {
    }
 
    footer {
-    background: url('./starter-code/assets/mobile/image-footer.jpg')  no-repeat  center, #4D96A9;
+    background: url('./assets/mobile/image-footer.jpg')  no-repeat  center, #4D96A9;
     height: 750px;
     width: auto;
    background-blend-mode: soft-light;
