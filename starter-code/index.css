@@ -21,7 +21,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,auto);
-    gap: 2rem;
+    gap: 8rem;
 
 }
 
@@ -30,7 +30,7 @@ main{
    display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
    
 }
 
@@ -235,6 +235,7 @@ footer {
 
 .image-one{
     place-self: center;
+    padding-bottom: 2rem;
 }
 
 .image-two{
