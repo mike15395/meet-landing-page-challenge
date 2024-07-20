@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github ](https://github.com/mike15395/meet-landing-page-challenge/blob/master/starter-code/index.html)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Live Site URL: [Live](https://meet-landing-page-challenge-kappa.vercel.app/)
 
 ## My process
 
