@@ -34,13 +34,7 @@ main{
    
 }
 
-.image-left-container{
-    /* overflow: hidden; */
-}
-.image-hero-left{
-    /* position: absolute; */
-   /* clip: rect(0,0,3px,0); */
-}
+
 
 .image-hero-tablet{
     display: none;
@@ -195,8 +189,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
-    /* background-color: #4D96A9; */
-    /* opacity: 70%; */
     height: 250px;
     place-self: center;
     padding-left: 8rem;
@@ -306,8 +298,8 @@ footer {
     "heading"
     "paragraph"
     "button";
-  
-   gap: 2px;
+    width: 830px;
+   gap: 30px;
    
     
 }
@@ -315,6 +307,8 @@ footer {
 .footer-heading{
     grid-area: heading;
     place-self: center;
+    text-align: center;
+    width:70%;
     
 }
 
@@ -355,14 +349,22 @@ footer {
 
    footer {
     background: url('./starter-code/assets/mobile/image-footer.jpg')  no-repeat  center, #4D96A9;
-    height: 768px;
+    height: 750px;
     width: auto;
    background-blend-mode: soft-light;
-    background-size: auto;
+    background-size: cover;
     color: white; 
     display: flex;
     justify-content: center;
     align-content: center;
+  }
+
+  .footer-container{
+    width: 600px;
+  }
+
+  .footer-heading{
+    width: 100%;
   }
 
 }
